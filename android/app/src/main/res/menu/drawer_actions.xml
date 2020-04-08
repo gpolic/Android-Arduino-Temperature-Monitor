@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_android"
+            android:title="@string/nav_current_temp"/>
+        <item
+            android:id="@+id/nav_temperatures"
+            android:icon="@drawable/ic_device"
+            android:title="@string/nav_past_temps"/>
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/ic_device"
+            android:title="@string/nav_analytics"/>
+    </group>
+
+    <item android:title="@string/nav_links">
+        <menu>
+            <item
+                android:id="@+id/nav_link1"
+                android:icon="@drawable/ic_link"
+                android:title="@string/nav_link1"/>
+
+<!--
+            <item
+                android:id="@+id/nav_link2"
+                android:icon="@drawable/ic_link"
+                android:title="@string/nav_link2"/>
+ -->
+        </menu>
+    </item>
+
+</menu>
