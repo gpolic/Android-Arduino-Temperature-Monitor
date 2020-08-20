@@ -6,43 +6,67 @@ Temperature and humidity monitoring for Arduino and Android using Web service (M
 
 # What does it do
 
-Temperature Monitor will get readings of temperature and humidity ence every hour
+Temperature Monitor will monitor the temperature and humidity at your space
 
-Arduino implements a small web server that shows the latest (current) readings
-The Android app is also shows the data with additional analytics
+Arduino along with temperature sensor takes readings and stores the data once every hour.
 
-Between the arduino (sensor) and Android there is a Web and database server that stores all the data
+The info can be monitored on Android app and on the web.
+
+There is also a database  that stores all the data
 
 
 # Hardware
 
 * Arduino Uno
 * Ethernet module
-* DHT11 sensor
+* DHT22 sensor
 
-Connect the sensor on pins xx of the Arduino
+
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/gpolic/Android-Arduino-Temperature-Monitor/master/media/DHT22.jpg" width="320"/>
+</p>
+
+
+
+Connect the sensor on pin 2 of the Arduino
+
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/gpolic/Android-Arduino-Temperature-Monitor/master/media/ARDUINO.jpg" width="320"/>
+</p>
+
+
+
 	
 # Software
 
 Web host with MySQL and PHP.
-Free host at https://www.freewebhostingarea.com/
+Example Free host at https://www.freewebhostingarea.com/
 
 Arduino code 
 Logs the temperature and humidity on the server in 60 minute intervals
 
-Android app is using the Stetho library to assist in troubleshooting the local SQLite database
-Statistic graphs with average per month, and graphics per day
+Android app provides statistics and graphs with average per month, per day
+
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/gpolic/Android-Arduino-Temperature-Monitor/master/media/androidapp1.png" width="320"/>
+</p>
 
 
 # Usage
 
-LAN connection
-Visit the page 192.168.1.201 on your home network
-There is the latest reading for temperature
 
-Internet
-Fireup the Android app and let it sync with the database
-It will show todays data per hour. The analytics tasb shows the temperature data complete history
+Start the Android app and let it sync with the database
+It will show todays data per hour. The Analytics tab shows the temperature data complete history
+
+
+
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/gpolic/Android-Arduino-Temperature-Monitor/master/media/androidapp2.png" width="320"/>
+</p>
+
+
+
+Open the URL of your server and check the temperature and humidity information
 
 
 # More info
